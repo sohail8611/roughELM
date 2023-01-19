@@ -1,0 +1,40 @@
+.modal {
+    position: absolute;
+}
+
+.modal-dialog {
+    /* max-width: 60vw !important; */
+    margin: 0px !important;
+    padding: 0px !important;
+    position: relative;
+    /* top: 15%; */
+    /* left: 15%; */
+
+}
+
+.modal-content {
+    height: 60vh !important;
+    /* max-height: 100vh;
+    height: 100%; */
+    height: auto;
+}
+
+.modal-body {
+    display: flex;
+
+}
+
+.carousel-inner,
+.carousel-item,
+.carousel-item div {
+    height: 100%;
+
+}
+
+/* .carousel-item img {
+    z-index: 1;
+}
+
+.carousel-caption {
+    z-index: 0;
+} */

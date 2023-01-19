@@ -1,0 +1,12 @@
+.adjust-modal {
+    /* height: 100vh !important; */
+    width: 80% !important;
+    /* max-width: 100% !important; */
+    min-width: 95% !important;
+    height: 80% !important;
+    /* max-height:100% !important; */
+    min-height: 90% !important;
+    margin: 2.5% !important;
+    left:2.5%;
+    top:4%;
+}

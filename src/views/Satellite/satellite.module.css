@@ -1,0 +1,138 @@
+:root {
+    --mainDivHeight: calc(100vh - 110px);
+}
+
+.main {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    min-height: var(--mainDivHeight);
+    display: flex;
+    background: black;
+}
+
+.leftDiv {
+    /* height: var(--mainDivHeight); */
+    height: calc(var(--mainDivHeight) - 2px);
+    width: 250px;
+    background: #111111;
+    color: black !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 10px;
+}
+
+.categoriesTitleDiv {
+    /* border: 1px solid; */
+    /* border: 1px solid white; */
+    height: 6em;
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.categoriesTitleDiv h2 {
+    color: white;
+}
+
+.heatMapButtonsDiv {
+    /* border: 1px solid white; */
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    overflow: auto;
+
+}
+
+.heatmapButton {
+    padding: 0px;
+    padding: 0px 0px 0px 5px;
+    display: flex;
+    white-space: nowrap;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: flex-start !important;
+    font-size: 0.75em !important;
+    font-weight: bold !important;
+    letter-spacing: 1px !important;
+    width: 100% !important;
+    cursor: pointer;
+}
+
+
+.rightDiv {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.labels {
+    width: 100%;
+}
+
+.labels ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0px;
+    background: linear-gradient(#08B3F7, #71573E, rgb(255, 51, 0));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: #0000;
+}
+
+.liAndCheckIcon {
+    /* border: 1px solid #fff; */
+    display: flex;
+    align-items: center;
+    min-height: 12px;
+    max-height: 10px;
+    box-sizing: border-box;
+    margin: 0px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.liAndCheckIcon span {
+    flex: 0.1;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.labels ul li {
+    list-style: none;
+    height: 12px;
+    margin: 1px 0px;
+    cursor: pointer;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.count {
+    /* border: 1px solid #fff; */
+    flex: 0.7;
+    font-size: 0.8em;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-weight: bold;
+}

@@ -1,0 +1,129 @@
+:root {
+    --purple: rgb(30, 22, 86);
+    --blue: rgb(42, 110, 187);
+    --pink: rgb(149, 45, 152);
+    --lightpink: rgb(114, 46, 165);
+    --cyan: rgb(68, 200, 245);
+    --gray: rgb(128, 130, 133)
+}
+
+.headerDenseMain {
+    font-family: 'DINArabic_Medium';
+    background: #fff;
+}
+
+.headerDense {
+    /* background-color: #243A73 !important; */
+    background-color: #fff !important;
+    height: 110px;
+}
+
+.sidebarMain {
+    font-family: 'DINArabic_Medium';
+}
+
+/* .uploadCarImages{
+    font-family: 'DINArabic_Medium';
+} */
+
+
+.drawerItemText span {
+    font-family: 'DINArabic_Regular';
+}
+
+.drawerItemActive span {
+    font-weight: bold !important;
+}
+
+.logoBox {
+    height: 100%;
+    width: 10%;
+}
+
+.headerLogo {
+    /* width: 45px;
+    height: 45px;
+    width: 140px;
+    height: 110px; */
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.PagesNameParentDiv {
+    flex: 1;
+    color: black;
+    height: 90px !important;
+    padding-left: 30px;
+}
+
+.PagesNameParentDiv ul {
+    height: 100%;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.PagesNameParentDiv ul li {
+    position: relative;
+    color: var(--gray);
+    list-style: none;
+    padding: 4px 0px;
+    width: 8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all ease .2s;
+    background: transparent;
+    z-index: 1;
+}
+
+
+.PagesNameParentDiv ul li::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: -200px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: var(--gray);
+    transform: skew(-30deg);
+    transition: all ease-in-out .2s;
+}
+
+.PagesNameParentDiv ul li:hover::before {
+    top: 0px;
+}
+
+.PagesNameParentDiv ul li:hover {
+    color: #fff;
+    font-weight: none;
+    background: transparent;
+}
+
+.activePage {
+    position: relative;
+    border: none;
+    border-bottom: 1px solid;
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width: 830px) {
+    /* .PagesNameParentDiv ul li{
+        color: var(--cyan);
+    } */
+
+    .headerLogo {
+        width: 80px;
+        height: 60px;
+    }
+
+    .PagesNameParentDiv {
+        display: none;
+    }
+}

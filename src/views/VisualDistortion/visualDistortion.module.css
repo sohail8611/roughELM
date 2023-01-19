@@ -1,0 +1,187 @@
+.dashboardMainDiv {
+    box-sizing: border-box;
+    min-height: calc(100vh - 110px);
+    height: 50vh !important;
+    width: 100%;
+    display: flex;
+    gap: 1px;
+    padding: 50px 20px;
+    /* background: #1F262A; */
+    background: url('/stars.gif');
+}
+
+.dashboardMapParentDiv {
+    flex: 1;
+}
+
+.dashboardCategoriesDiv {
+    flex: 0.2;
+    /* background: #333332; */
+    background: #090909;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    /* padding: 10px; */
+    gap: 5px;
+    color: white;
+    /* padding: 2px 5px; */
+
+}
+
+.categoriesTitleDiv {
+    /* border: 1px solid; */
+    /* border: 1px solid white; */
+    height: 3em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+    padding: 5px 10px 0px 10px;
+}
+
+.categoriesTitleDiv h4 {
+    color: rgba(255, 255, 255, 0.7);
+    width: max-content;
+    font-size: 20px;
+}
+
+.heatMapButtonsDiv {
+    /* border: 1px solid white; */
+    position: relative;
+    box-sizing: border-box;
+    /* border-radius: 5px; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    overflow: auto;
+    padding: 2px 5px;
+    /* overflow-y: auto; */
+
+}
+
+
+.labels ul {
+    padding: 0px;
+    background: linear-gradient(#08B3F7, #71573E, rgb(255, 51, 0));
+    /* background: linear-gradient(rgb(255, 51, 0), #71573E, #08B3F7); */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: #0000;
+    mix-blend-mode: difference;
+}
+
+.liAndCheckIcon {
+    display: flex;
+    align-items: center;
+    min-height: 12px;
+    max-height: 10px;
+    box-sizing: border-box;
+    margin: 0px;
+
+
+}
+
+.liAndCheckIcon span {
+    flex: 0.1;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.labels ul li {
+    list-style: none;
+    height: 12px;
+    margin: 1px 0px;
+    cursor: pointer;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/* .heatmapButtonBox {
+    position: relative;
+    background: linear-gradient(#d38f8f, #95d195, #87b2d4);
+    -webkit-background-clip: text;
+    background-clip: text;
+} */
+
+.heatmapButton {
+    /* padding: 0px;
+    margin: 0px;
+    display: flex;
+    white-space: nowrap;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: flex-start !important;
+    font-size: 0.75em !important;
+    font-weight: bold !important;
+    letter-spacing: 1px !important;
+    color: rgb(197, 217, 226) !important; */
+    font-size: 0.6em;
+    font-weight: bold;
+    padding: 0px 0px 0px 5px;
+    font-family: 'DINArabic_Regular';
+
+}
+
+
+/* Webkit browsers */
+::-webkit-scrollbar {
+    width: 10px;
+    /* width of the entire scrollbar */
+    height: 10px;
+    /* height of the entire scrollbar */
+}
+
+/* Webkit browsers */
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    /* color of the scrollbar thumb */
+    border-radius: 10px;
+    /* rounded corners of the scrollbar thumb */
+}
+
+/* Firefox */
+scrollbar {
+    width: 10px;
+    /* width of the entire scrollbar */
+    height: 10px;
+    /* height of the entire scrollbar */
+}
+
+/* Firefox */
+scrollbar thumb {
+    background-color: #888;
+    /* color of the scrollbar thumb */
+    border-radius: 10px;
+    /* rounded corners of the scrollbar thumb */
+}
+
+
+
+.allLegendsParentDiv {
+    /* border: 1px solid #1F262A; */
+    width: 100%;
+    padding: 5px;
+    background: #1F262A;
+
+}
+
+.eachLegendsParentDiv {
+    display: flex;
+    align-items: center;
+    gap: 5px
+}
+
+.legendText {
+    font-size: 10px
+}

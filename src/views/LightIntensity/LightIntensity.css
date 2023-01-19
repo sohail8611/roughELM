@@ -1,0 +1,130 @@
+:root {
+  --floatingTopPosition: 120px;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+#root,
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.mapParentDiv {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  /* border: 2px solid red; */
+}
+
+.luxSensorButtonsDiv {
+  position: absolute;
+  /* top: 50px; */
+  top: calc(var(--floatingTopPosition) + 10px);
+  left: calc(40%);
+  z-index: 999;
+  display: flex;
+  gap: 10px;
+  transition: all ease .2s;
+}
+
+.luxSensorButtonsDiv button,
+.intensitySubmitButton {
+  padding: 3px 10px;
+  /* font-weight: bold; */
+  background: #243A73;
+  color: white;
+  /* border-radius: 5px; */
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.luxSensorButtonsDiv button:hover,
+.intensitySubmitButton:hover {
+  opacity: 0.8;
+}
+
+.intensityInputParentDiv {
+  /* width: 100px;
+  height: 100px; */
+  background: #fff;
+  position: absolute;
+  /* top: 50px; */
+  top: var(--floatingTopPosition);
+  right: 0;
+  z-index: 999;
+  padding: 10px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: all ease .2s;
+}
+
+.dateInputParentDiv {
+  background: #fff;
+  position: absolute;
+  /* top: 50px; */
+  top: var(--floatingTopPosition);
+  left: 40px;
+  z-index: 999;
+  padding: 10px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: all ease .2s;
+}
+
+.intensityInputParentDiv span {
+  color: #fff;
+}
+
+.dateInputSpan {
+  color: #fff !important;
+}
+
+.intensityInputParentDiv input {
+  width: 50px;
+  height: 30px;
+  border-radius: 5px;
+  /* padding: 3px 10px; */
+}
+
+.popUpStyle {
+  z-index: 999;
+  position: absolute;
+  background: white;
+  border-radius: 5px;
+  padding: 7px 10px;
+  font-weight: bold;
+
+}
+
+@media only screen and (max-width: 830px) {
+  .dateInputParentDiv {
+    top: calc(var(--floatingTopPosition) - 50px);
+    left: 40px;
+  }
+
+  .luxSensorButtonsDiv {
+    top: calc(var(--floatingTopPosition) - 40px);
+    left: initial;
+    right: 10px;
+  }
+
+  .intensityInputParentDiv {
+    top: calc(var(--floatingTopPosition) - 5px);
+    right: 0;
+    background: #6a2c91;
+  }
+}

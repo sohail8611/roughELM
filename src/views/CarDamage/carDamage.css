@@ -1,0 +1,157 @@
+.carDamageMain {
+    /* background: url('/public/carDamage/images/carDamageBG.jpg'); */
+    /* background-color: #cccccc; */
+    /* object-fit: contain; */
+    height: calc(100vh - 50px);
+    width: 100%;
+    /* border: 1px solid red; */
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.plusIconButton {
+    background: lightgray !important;
+    color: #243A73 !important;
+    width: 50%;
+    height: 60%;
+    border-radius: 5px !important;
+
+}
+
+.plusIconButton:hover {
+    opacity: 0.8;
+}
+
+.plusIconButtonIcon {
+    width: 50% !important;
+    height: 50% !important;
+}
+
+.carDamageModalParent {
+    width: 80%;
+    height: calc(100vh - 50px - 20vh);
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.checkBoxAndImageUploadParentDiv {
+    /* border: 1px solid salmon; */
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+    height: 100%;
+}
+
+.carDamageModalCheckBoxParent {
+    /* border: 1px solid red; */
+    /* flex: 0.05; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+    width: 5px;
+    padding: 5px;
+}
+
+.carDamageModalCheckBoxDiv {
+    /* border: 1px solid; */
+    border-radius: 4px;
+    box-shadow: 0px 0px 6px black;
+    width: 80px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold
+}
+
+.imageUpload {
+    flex: 1;
+    /* width: 100%; */
+    /* border: 1px solid rgb(0, 46, 196); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    /* flex-direction: column; */
+}
+
+.imageUpload h2 {
+    /* color: rgb(129, 129, 129); */
+    margin-bottom: 20px;
+    color: #0f6cb5;
+    font-weight: bold;
+    /* border-bottom: 8px solid #0f6cb5; */
+    padding-bottom: 10px;
+}
+
+.imageUploadTop img {
+    /* width: 200px;
+    height: 150px; */
+    width: 30%;
+    height: 30%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.imageUploadTop {
+    /* border: 1px solid green; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+}
+
+.imageUploadBottom {
+    /* border: 1px solid green; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-indicators {
+    display: none !important;
+}
+
+.footerButtonsDiv {
+    display: flex;
+    gap: 5px;
+}
+
+.footerButtonsDiv button {
+    width: 50%;
+}
+
+.carousel-item {
+    height: 100% !important;
+}
+
+.image-grid {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    width: 80%;
+    /* height: calc(100vh - 220px); */
+    height: 100%;
+    min-width: 572px;
+}
+
+.setImageDimension {
+    width: 20% !important;
+    height: 40% !important
+}
